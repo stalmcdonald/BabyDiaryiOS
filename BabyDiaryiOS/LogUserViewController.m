@@ -41,7 +41,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-//once username and password entered there's a check to make sure password length is <5
+//once username and password entered there's a check to make sure password length is <4
 - (IBAction)didTapLogin:(id)sender {
     
     NSString *username = [usernameCredentials text];
@@ -49,7 +49,7 @@
     
     //alert pops up if input is less than 5 characters
     
-    if ([username length] < 4 || [password length] < 4) {
+    if ([username length] < 3 || [password length] < 3) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Entry" message:@"Username and Password must both be at least 4 characters long." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
         [alert show];
     } else {

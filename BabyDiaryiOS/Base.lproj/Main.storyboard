@@ -38,7 +38,6 @@
                                 </state>
                                 <connections>
                                     <action selector="logUserIn:" destination="pk0-fT-Adj" eventType="touchUpInside" id="547-D2-iCU"/>
-                                    <action selector="signUserUp:" destination="pk0-fT-Adj" eventType="touchUpInside" id="tLA-au-BT6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwx-SK-Beo">
@@ -50,7 +49,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qnW-wd-NeN" kind="push" identifier="gotoSignUpView" id="Ptf-aA-Vkj"/>
+                                    <action selector="signUserUp:" destination="pk0-fT-Adj" eventType="touchUpInside" id="Cb0-t6-V1D"/>
+                                    <segue destination="qnW-wd-NeN" kind="push" identifier="gotoSignUpView" id="f15-dO-4OG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,9 +60,9 @@
                     <connections>
                         <outlet property="logInButton" destination="pHM-Cb-2za" id="I1j-ln-nmO"/>
                         <outlet property="signUpButton" destination="Qwx-SK-Beo" id="5Bq-Br-1AH"/>
-                        <segue destination="qnW-wd-NeN" kind="push" identifier="gotoSignUpView" id="xLL-aJ-qZt"/>
-                        <segue destination="vXZ-lx-hvc" kind="push" identifier="gotoLogUserView" id="i0H-fU-bqW"/>
-                        <segue destination="nrW-po-hDh" kind="push" identifier="gotoMainView" id="xJZ-2Q-YsR"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="gotoLogUserView" id="cs7-ey-z7D"/>
+                        <segue destination="qnW-wd-NeN" kind="push" identifier="gotoSignUpView" id="nTg-0X-sTA"/>
+                        <segue destination="nrW-po-hDh" kind="push" identifier="gotoMainView" id="aO2-s0-Pn9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x16-Ni-kFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,8 +94,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QoR-kB-M9n"/>
-                                    <segue destination="nrW-po-hDh" kind="push" identifier="loginToMain" id="X1b-6Q-1vG"/>
+                                    <action selector="didTapLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mgF-Ru-ve7"/>
+                                    <segue destination="nrW-po-hDh" kind="push" identifier="loginToMain" id="H3f-A4-m2k"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3uN-Ik-ukd">
@@ -124,17 +124,12 @@
                         <color key="backgroundColor" red="0.98039221759999995" green="0.98039221759999995" blue="0.93333339689999995" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="1AR-qD-0GX">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="FsW-Ag-7Sz" userLabel="Bar Button Item - Cancel">
-                            <connections>
-                                <segue destination="6rC-bb-Vy1" kind="modal" id="GDB-B1-Mwp"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="1AR-qD-0GX"/>
                     <connections>
                         <outlet property="activityIndicator" destination="n4l-oA-Jay" id="Mly-UL-wFy"/>
                         <outlet property="passwordCredentials" destination="nRh-98-6Ro" id="Uvy-fl-0yy"/>
                         <outlet property="usernameCredentials" destination="3uN-Ik-ukd" id="mPt-Iu-Ub1"/>
+                        <segue destination="nrW-po-hDh" kind="push" identifier="loginToMain" id="n53-L5-8S5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -199,7 +194,7 @@
                         <outlet property="activityIndicator" destination="kCF-Ml-gMg" id="zUG-OG-ghA"/>
                         <outlet property="passwordEntry" destination="EtS-Lu-n2A" id="6Bq-ZI-Agi"/>
                         <outlet property="usernameEntry" destination="7Yr-im-rlT" id="UgS-TO-L3f"/>
-                        <segue destination="nrW-po-hDh" kind="push" identifier="signupToMain" id="Seb-IO-RkT"/>
+                        <segue destination="nrW-po-hDh" kind="push" identifier="signupToMain" id="8F8-Sj-fZB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYw-lI-fBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,7 +211,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.98823535439999999" green="0.98823535439999999" blue="0.96470594409999999" alpha="1" colorSpace="deviceRGB"/>
                         <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IUT-3v-GF9">
-                            <rect key="frame" x="0.0" y="64" width="320" height="46"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="0.59999999999999964" height="1"/>
                             <state key="normal" image="plus.png">
@@ -224,11 +219,11 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <segue destination="xl4-rT-JVl" kind="push" id="yJl-Lf-yqL"/>
+                                <segue destination="xl4-rT-JVl" kind="push" id="Yhl-7K-SWl"/>
                             </connections>
                         </button>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K3I-mN-BkO">
-                            <rect key="frame" x="0.0" y="176" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="112" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.90980398650000005" green="0.55686277149999996" blue="0.46666669849999998" alpha="1" colorSpace="deviceRGB"/>
                             <state key="normal" title="Logout">
@@ -237,19 +232,19 @@
                             </state>
                             <connections>
                                 <action selector="logoutBttn:" destination="nrW-po-hDh" eventType="touchUpInside" id="VUk-uo-uV1"/>
-                                <segue destination="vXZ-lx-hvc" kind="push" identifier="gotoLogUserView" id="SuB-7M-Vv4"/>
+                                <segue destination="vXZ-lx-hvc" kind="push" identifier="gotoLogUserView" id="PDr-Pc-V5r"/>
                             </connections>
                         </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="56K-Fn-fzB">
-                                <rect key="frame" x="0.0" y="132" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="68" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="56K-Fn-fzB" id="Rkv-iO-X3h">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="xl4-rT-JVl" kind="push" identifier="editing" id="bjT-CT-3zV"/>
+                                    <segue destination="xl4-rT-JVl" kind="modal" id="PtQ-gz-zbR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -312,7 +307,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addItem:" destination="xl4-rT-JVl" eventType="touchUpInside" id="bfj-6t-xQr"/>
-                                    <segue destination="nrW-po-hDh" kind="push" identifier="gotoMainView" id="eoV-uo-gEF"/>
+                                    <segue destination="nrW-po-hDh" kind="push" identifier="loginToMain" id="pxe-Hg-CJs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -360,9 +355,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Ptf-aA-Vkj"/>
-        <segue reference="i0H-fU-bqW"/>
-        <segue reference="xJZ-2Q-YsR"/>
-        <segue reference="bjT-CT-3zV"/>
+        <segue reference="f15-dO-4OG"/>
+        <segue reference="PDr-Pc-V5r"/>
+        <segue reference="pxe-Hg-CJs"/>
+        <segue reference="Yhl-7K-SWl"/>
     </inferredMetricsTieBreakers>
 </document>
