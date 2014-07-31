@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21EB703F1981598B005DA662 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB703E1981598B005DA662 /* Foundation.framework */; };
+		21EB70411981598B005DA662 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB70401981598B005DA662 /* CoreGraphics.framework */; };
+		21EB70431981598B005DA662 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB70421981598B005DA662 /* UIKit.framework */; };
+		21EB70491981598B005DA662 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21EB70471981598B005DA662 /* InfoPlist.strings */; };
+		21EB704B1981598B005DA662 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB704A1981598B005DA662 /* main.m */; };
+		21EB704F1981598B005DA662 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB704E1981598B005DA662 /* AppDelegate.m */; };
+		21EB70521981598B005DA662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EB70501981598B005DA662 /* Main.storyboard */; };
+		21EB70551981598B005DA662 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB70541981598B005DA662 /* ViewController.m */; };
+		21EB70571981598B005DA662 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EB70561981598B005DA662 /* Images.xcassets */; };
+		21EB707819815A34005DA662 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB707719815A34005DA662 /* AudioToolbox.framework */; };
+		21EB707A19815A3E005DA662 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB707919815A3E005DA662 /* CFNetwork.framework */; };
+		21EB707C19815A53005DA662 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB707B19815A53005DA662 /* CoreLocation.framework */; };
+		21EB707E19815A5D005DA662 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB707D19815A5D005DA662 /* MobileCoreServices.framework */; };
+		21EB708019815A66005DA662 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB707F19815A66005DA662 /* QuartzCore.framework */; };
+		21EB708219815A6D005DA662 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB708119815A6D005DA662 /* Security.framework */; };
+		21EB708419815A77005DA662 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB708319815A77005DA662 /* StoreKit.framework */; };
+		21EB708619815A85005DA662 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB708519815A85005DA662 /* SystemConfiguration.framework */; };
+		21EB708F19815BDE005DA662 /* SignupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB708E19815BDE005DA662 /* SignupView.m */; };
+		21EB709219815C21005DA662 /* LogUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB709119815C21005DA662 /* LogUserViewController.m */; };
+		21EB709519815C86005DA662 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB709419815C86005DA662 /* ListViewController.m */; };
+		21EB709819815CBB005DA662 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB709719815CBB005DA662 /* TaskViewController.m */; };
+		21EB709B19815D1A005DA662 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB709A19815D1A005DA662 /* Reachability.m */; };
+		21EB709E19815D8A005DA662 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB709D19815D8A005DA662 /* DetailViewController.m */; };
+		21EB70A01981605B005DA662 /* babydiary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21EB709F1981605B005DA662 /* babydiary.jpg */; };
+		21EB70A219816065005DA662 /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EB70A119816065005DA662 /* elephant.png */; };
+		21EB70A4198160DD005DA662 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EB70A3198160DD005DA662 /* logo.png */; };
+		21EB70A619816811005DA662 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB70A519816811005DA662 /* CoreData.framework */; };
+		21EB70A81981687B005DA662 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB70A71981687B005DA662 /* libz.1.2.5.dylib */; };
+		21EB70A91981699A005DA662 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB707319815A21005DA662 /* libz.dylib */; };
+		21EB70AA198169B5005DA662 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB707519815A2B005DA662 /* libz.1.1.3.dylib */; };
+		21EB70AC19816B69005DA662 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB70AB19816B69005DA662 /* Parse.framework */; };
+		21EB70AF1981803B005DA662 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EB70AE1981803B005DA662 /* plus.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21EB703B1981598B005DA662 /* BabyDiaryiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyDiaryiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21EB703E1981598B005DA662 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21EB70401981598B005DA662 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		21EB70421981598B005DA662 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21EB70461981598B005DA662 /* BabyDiaryiOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BabyDiaryiOS-Info.plist"; sourceTree = "<group>"; };
+		21EB70481981598B005DA662 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21EB704A1981598B005DA662 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21EB704C1981598B005DA662 /* BabyDiaryiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BabyDiaryiOS-Prefix.pch"; sourceTree = "<group>"; };
+		21EB704D1981598B005DA662 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		21EB704E1981598B005DA662 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		21EB70511981598B005DA662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21EB70531981598B005DA662 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		21EB70541981598B005DA662 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		21EB70561981598B005DA662 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		21EB705D1981598B005DA662 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		21EB70651981598B005DA662 /* BabyDiaryiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BabyDiaryiOSTests-Info.plist"; sourceTree = "<group>"; };
+		21EB70671981598B005DA662 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21EB70691981598B005DA662 /* BabyDiaryiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabyDiaryiOSTests.m; sourceTree = "<group>"; };
+		21EB707319815A21005DA662 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		21EB707519815A2B005DA662 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		21EB707719815A34005DA662 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		21EB707919815A3E005DA662 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		21EB707B19815A53005DA662 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		21EB707D19815A5D005DA662 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		21EB707F19815A66005DA662 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		21EB708119815A6D005DA662 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		21EB708319815A77005DA662 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		21EB708519815A85005DA662 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		21EB708D19815BDE005DA662 /* SignupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupView.h; sourceTree = "<group>"; };
+		21EB708E19815BDE005DA662 /* SignupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupView.m; sourceTree = "<group>"; };
+		21EB709019815C21005DA662 /* LogUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUserViewController.h; sourceTree = "<group>"; };
+		21EB709119815C21005DA662 /* LogUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUserViewController.m; sourceTree = "<group>"; };
+		21EB709319815C86005DA662 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		21EB709419815C86005DA662 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		21EB709619815CBB005DA662 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		21EB709719815CBB005DA662 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		21EB709919815D1A005DA662 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		21EB709A19815D1A005DA662 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		21EB709C19815D8A005DA662 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		21EB709D19815D8A005DA662 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		21EB709F1981605B005DA662 /* babydiary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babydiary.jpg; sourceTree = "<group>"; };
+		21EB70A119816065005DA662 /* elephant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elephant.png; sourceTree = "<group>"; };
+		21EB70A3198160DD005DA662 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		21EB70A519816811005DA662 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		21EB70A71981687B005DA662 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		21EB70AB19816B69005DA662 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		21EB70AE1981803B005DA662 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21EB70381981598B005DA662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EB70AA198169B5005DA662 /* libz.1.1.3.dylib in Frameworks */,
+				21EB70A91981699A005DA662 /* libz.dylib in Frameworks */,
+				21EB70A81981687B005DA662 /* libz.1.2.5.dylib in Frameworks */,
+				21EB70A619816811005DA662 /* CoreData.framework in Frameworks */,
+				21EB70431981598B005DA662 /* UIKit.framework in Frameworks */,
+				21EB70AC19816B69005DA662 /* Parse.framework in Frameworks */,
+				21EB70411981598B005DA662 /* CoreGraphics.framework in Frameworks */,
+				21EB703F1981598B005DA662 /* Foundation.framework in Frameworks */,
+				21EB708619815A85005DA662 /* SystemConfiguration.framework in Frameworks */,
+				21EB708419815A77005DA662 /* StoreKit.framework in Frameworks */,
+				21EB708219815A6D005DA662 /* Security.framework in Frameworks */,
+				21EB708019815A66005DA662 /* QuartzCore.framework in Frameworks */,
+				21EB707E19815A5D005DA662 /* MobileCoreServices.framework in Frameworks */,
+				21EB707C19815A53005DA662 /* CoreLocation.framework in Frameworks */,
+				21EB707A19815A3E005DA662 /* CFNetwork.framework in Frameworks */,
+				21EB707819815A34005DA662 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21EB70321981598B005DA662 = {
+			isa = PBXGroup;
+			children = (
+				21EB70441981598B005DA662 /* BabyDiaryiOS */,
+				21EB70631981598B005DA662 /* BabyDiaryiOSTests */,
+				21EB703D1981598B005DA662 /* Frameworks */,
+				21EB703C1981598B005DA662 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21EB703C1981598B005DA662 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21EB703B1981598B005DA662 /* BabyDiaryiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21EB703D1981598B005DA662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21EB70AB19816B69005DA662 /* Parse.framework */,
+				21EB70A71981687B005DA662 /* libz.1.2.5.dylib */,
+				21EB70A519816811005DA662 /* CoreData.framework */,
+				21EB708519815A85005DA662 /* SystemConfiguration.framework */,
+				21EB708319815A77005DA662 /* StoreKit.framework */,
+				21EB708119815A6D005DA662 /* Security.framework */,
+				21EB707F19815A66005DA662 /* QuartzCore.framework */,
+				21EB707D19815A5D005DA662 /* MobileCoreServices.framework */,
+				21EB707B19815A53005DA662 /* CoreLocation.framework */,
+				21EB707919815A3E005DA662 /* CFNetwork.framework */,
+				21EB707719815A34005DA662 /* AudioToolbox.framework */,
+				21EB707519815A2B005DA662 /* libz.1.1.3.dylib */,
+				21EB707319815A21005DA662 /* libz.dylib */,
+				21EB703E1981598B005DA662 /* Foundation.framework */,
+				21EB70401981598B005DA662 /* CoreGraphics.framework */,
+				21EB70421981598B005DA662 /* UIKit.framework */,
+				21EB705D1981598B005DA662 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21EB70441981598B005DA662 /* BabyDiaryiOS */ = {
+			isa = PBXGroup;
+			children = (
+				21EB70AE1981803B005DA662 /* plus.png */,
+				21EB70A3198160DD005DA662 /* logo.png */,
+				21EB70A119816065005DA662 /* elephant.png */,
+				21EB709F1981605B005DA662 /* babydiary.jpg */,
+				21EB70501981598B005DA662 /* Main.storyboard */,
+				21EB704D1981598B005DA662 /* AppDelegate.h */,
+				21EB704E1981598B005DA662 /* AppDelegate.m */,
+				21EB70531981598B005DA662 /* ViewController.h */,
+				21EB70541981598B005DA662 /* ViewController.m */,
+				21EB708D19815BDE005DA662 /* SignupView.h */,
+				21EB708E19815BDE005DA662 /* SignupView.m */,
+				21EB709019815C21005DA662 /* LogUserViewController.h */,
+				21EB709119815C21005DA662 /* LogUserViewController.m */,
+				21EB709319815C86005DA662 /* ListViewController.h */,
+				21EB709419815C86005DA662 /* ListViewController.m */,
+				21EB709619815CBB005DA662 /* TaskViewController.h */,
+				21EB709719815CBB005DA662 /* TaskViewController.m */,
+				21EB709C19815D8A005DA662 /* DetailViewController.h */,
+				21EB709D19815D8A005DA662 /* DetailViewController.m */,
+				21EB70561981598B005DA662 /* Images.xcassets */,
+				21EB70451981598B005DA662 /* Supporting Files */,
+				21EB709919815D1A005DA662 /* Reachability.h */,
+				21EB709A19815D1A005DA662 /* Reachability.m */,
+			);
+			path = BabyDiaryiOS;
+			sourceTree = "<group>";
+		};
+		21EB70451981598B005DA662 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21EB70461981598B005DA662 /* BabyDiaryiOS-Info.plist */,
+				21EB70471981598B005DA662 /* InfoPlist.strings */,
+				21EB704A1981598B005DA662 /* main.m */,
+				21EB704C1981598B005DA662 /* BabyDiaryiOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21EB70631981598B005DA662 /* BabyDiaryiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				21EB70691981598B005DA662 /* BabyDiaryiOSTests.m */,
+				21EB70641981598B005DA662 /* Supporting Files */,
+			);
+			path = BabyDiaryiOSTests;
+			sourceTree = "<group>";
+		};
+		21EB70641981598B005DA662 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21EB70651981598B005DA662 /* BabyDiaryiOSTests-Info.plist */,
+				21EB70661981598B005DA662 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21EB703A1981598B005DA662 /* BabyDiaryiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21EB706D1981598B005DA662 /* Build configuration list for PBXNativeTarget "BabyDiaryiOS" */;
+			buildPhases = (
+				21EB70371981598B005DA662 /* Sources */,
+				21EB70381981598B005DA662 /* Frameworks */,
+				21EB70391981598B005DA662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabyDiaryiOS;
+			productName = BabyDiaryiOS;
+			productReference = 21EB703B1981598B005DA662 /* BabyDiaryiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21EB70331981598B005DA662 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "CRYSTAL MCDONALD";
+			};
+			buildConfigurationList = 21EB70361981598B005DA662 /* Build configuration list for PBXProject "BabyDiaryiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21EB70321981598B005DA662;
+			productRefGroup = 21EB703C1981598B005DA662 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21EB703A1981598B005DA662 /* BabyDiaryiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21EB70391981598B005DA662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EB70571981598B005DA662 /* Images.xcassets in Resources */,
+				21EB70A219816065005DA662 /* elephant.png in Resources */,
+				21EB70A4198160DD005DA662 /* logo.png in Resources */,
+				21EB70491981598B005DA662 /* InfoPlist.strings in Resources */,
+				21EB70521981598B005DA662 /* Main.storyboard in Resources */,
+				21EB70AF1981803B005DA662 /* plus.png in Resources */,
+				21EB70A01981605B005DA662 /* babydiary.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21EB70371981598B005DA662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EB709219815C21005DA662 /* LogUserViewController.m in Sources */,
+				21EB709819815CBB005DA662 /* TaskViewController.m in Sources */,
+				21EB709E19815D8A005DA662 /* DetailViewController.m in Sources */,
+				21EB709B19815D1A005DA662 /* Reachability.m in Sources */,
+				21EB70551981598B005DA662 /* ViewController.m in Sources */,
+				21EB709519815C86005DA662 /* ListViewController.m in Sources */,
+				21EB704F1981598B005DA662 /* AppDelegate.m in Sources */,
+				21EB708F19815BDE005DA662 /* SignupView.m in Sources */,
+				21EB704B1981598B005DA662 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21EB70471981598B005DA662 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21EB70481981598B005DA662 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21EB70501981598B005DA662 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21EB70511981598B005DA662 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21EB70661981598B005DA662 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21EB70671981598B005DA662 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21EB706B1981598B005DA662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21EB706C1981598B005DA662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21EB706E1981598B005DA662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BabyDiaryiOS/BabyDiaryiOS-Prefix.pch";
+				INFOPLIST_FILE = "BabyDiaryiOS/BabyDiaryiOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		21EB706F1981598B005DA662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BabyDiaryiOS/BabyDiaryiOS-Prefix.pch";
+				INFOPLIST_FILE = "BabyDiaryiOS/BabyDiaryiOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21EB70361981598B005DA662 /* Build configuration list for PBXProject "BabyDiaryiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21EB706B1981598B005DA662 /* Debug */,
+				21EB706C1981598B005DA662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21EB706D1981598B005DA662 /* Build configuration list for PBXNativeTarget "BabyDiaryiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21EB706E1981598B005DA662 /* Debug */,
+				21EB706F1981598B005DA662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21EB70331981598B005DA662 /* Project object */;
+}
